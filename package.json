@@ -1,0 +1,29 @@
+{
+  "name": "myindia-ecommerce-website-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sriramalavalapati3/myindia-ecommerce-website-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sriramalavalapati3/myindia-ecommerce-website-backend/issues"
+  },
+  "homepage": "https://github.com/sriramalavalapati3/myindia-ecommerce-website-backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "json-web-token": "^3.2.0",
+    "mongoose": "^8.4.3",
+    "nodemon": "^3.1.3"
+  }
+}
