@@ -1,12 +1,14 @@
 const express = require('express');
 const {connection} = require('../config/config');
 const {userRoute} = require('./routes/user');
+const {productRoute} = require('./routes/product');
 const cors = require('cors')
 const app = express();
 app.use(cors());
 app.use(express.json());
 require('dotenv').config();
-app.use('/api',userRoute)
+app.use('/api',userRoute);
+app.use('/api',productRoute);
 app.get('/',async(req,res)=>{
     try {
         res.status(201).send({'msg':'welcome to myindia'});
