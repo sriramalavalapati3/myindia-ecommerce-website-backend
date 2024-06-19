@@ -7,6 +7,9 @@ const productSchema = mongoose.Schema({
     'productCategory':{
         type:String,
     },
+    'productDescription':{
+        type:String,
+    },
     'productQuantity':{
         type:String,
     },
