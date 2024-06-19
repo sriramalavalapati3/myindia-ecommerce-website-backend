@@ -1,4 +1,5 @@
 const express = require('express');
+const {connection} = require('../config/config')
 const app = express();
 app.use(express.json());
 require('dotenv').config()
@@ -13,6 +14,7 @@ app.get('/',async(req,res)=>{
 
 app.listen(process.env.PORT || 5050 , async(req,res)=>{
 try {
+    await connection;
     console.log(`Server is running on port ${process.env.PORT}`);
 } catch (error) {
     console.log(error);
