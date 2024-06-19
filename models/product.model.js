@@ -11,12 +11,12 @@ const productSchema = mongoose.Schema({
         type:String,
     },
     'productQuantity':{
-        type:String,
+        type:Number,
     },
     'productPrize':{
         type:Number
     },
-    'logisticOwner':{
+    'productSupplier':{
         type:String
     }
 });
