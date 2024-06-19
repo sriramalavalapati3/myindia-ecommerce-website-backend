@@ -1,21 +1,26 @@
 const express = require('express');
-const {connection} = require('../config/config')
+const {connection} = require('../config/config');
+const {userRoute} = require('./routes/user');
+const cors = require('cors')
 const app = express();
+app.use(cors());
 app.use(express.json());
-require('dotenv').config()
-
+require('dotenv').config();
+app.use('/api',userRoute)
 app.get('/',async(req,res)=>{
     try {
         res.status(201).send({'msg':'welcome to myindia'});
     } catch (error) {
         res.status(500).send({'msg':'something went wrong'});
     }
-})
+});
 
-app.listen(process.env.PORT || 5050 , async(req,res)=>{
+const port = process.env.PORT || 5050
+
+app.listen( port , async(req,res)=>{
 try {
     await connection;
-    console.log(`Server is running on port ${process.env.PORT}`);
+    console.log(`Server is running on port ${port}`);
 } catch (error) {
     console.log(error);
 }

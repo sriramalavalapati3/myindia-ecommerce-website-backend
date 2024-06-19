@@ -3,9 +3,9 @@ const {productSchema} = require('./product.model');
 const {orderSchema} = require('./order.model');
 const mongoose = require('mongoose')
 
-const users = mongoose.model('user',userSchema);
-const products = mongoose.model('user',productSchema);
-const ordersModel = mongoose.model('user',orderSchema);
+const User = mongoose.model('user',userSchema);
+const products = mongoose.model('products',productSchema);
+const ordersModel = mongoose.model('orders',orderSchema);
 
 
-module.exports = {users,products,ordersModel}
+module.exports = {User,products,ordersModel}

@@ -17,6 +17,9 @@ const userSchema = mongoose.Schema({
     },
     "userType":{
         type:String,
+    },
+    "mobile":{
+        type:Number,
     }
 })
 
