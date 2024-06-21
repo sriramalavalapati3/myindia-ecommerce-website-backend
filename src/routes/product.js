@@ -3,7 +3,7 @@ const productRoute = express.Router();
 const {auth,authorize} = require('../../middlewares/autherization')
 
 const {validateProduct, validateFilters} = require('../../middlewares/validation');
-const {handleProductUpload, getAllProducts,handleProductById,getProductsUsingFilter} = require('../controllers/controller');
+const {handleProductUpload, getAllProducts,handleProductById,getProductsUsingFilter,} = require('../controllers/controller');
 
 
 productRoute.post('/productUpload',auth,authorize(['seller']),validateProduct,handleProductUpload);

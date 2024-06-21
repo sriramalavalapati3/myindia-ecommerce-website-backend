@@ -7,17 +7,27 @@ const orderSchema = mongoose.Schema({
     'amount':{
         type:Number,
     },
-    'username':{
-        type:String,
+    'productQuantity':{
+        type:Number
     },
     'user':{
         type:String,
+        required:true,
     },
     'ProductId':{
         type:String,
     },
     'billingAddress':{
+        type:String,
+        required : true,
+    },
+    'paymentIntentId':{
         type:String
+    },
+    'paymentStatus': {
+        type: String,
+        enum: ['pending', 'paid', 'failed'],
+        default: 'pending'
     },
 });
 
