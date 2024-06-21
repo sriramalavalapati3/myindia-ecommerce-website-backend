@@ -264,6 +264,14 @@ json
 }
 ```
 
+```
+i am attaching duplicate stripe card details for stripe payment ,you can use this 
+
+card no : 4242424242424242
+Expiry : 02/28
+cvv : 453
+```
+
 ### 8. Stripe Webhook
 **Endpoint:** `POST /api/paymentStatus`
 
