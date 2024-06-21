@@ -35,7 +35,7 @@ app.get('/paymentCancel',async(req,res)=>{
     }
 });
 
-const port = process.env.PORT || 5050
+const port = process.env.PORT
 
 app.listen( port , async(req,res)=>{
 try {
