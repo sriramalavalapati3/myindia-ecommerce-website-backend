@@ -111,6 +111,9 @@ This is the backend for an e-commerce platform built with Node.js, Express.js, a
 token,
 userdetails
 }
+
+token is valid for 1 hour 
+and for login there is a rate limit
 ```
 
 
