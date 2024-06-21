@@ -1,7 +1,7 @@
 # E-Commerce Backend
 
 This is the backend for an e-commerce platform built with Node.js, Express.js, and MongoDB. The application handles user registration, login, product management, order processing, and payments using Stripe.
-
+## Explanation [Video](https://drive.google.com/file/d/10JccSR0Ax5ZNd_efraSHSvgVN3izbrKn/view)
 ## Setup and Installation
 
 ### Prerequisites
