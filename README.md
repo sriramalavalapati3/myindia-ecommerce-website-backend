@@ -1,6 +1,9 @@
 # E-Commerce Backend
 
 This is the backend for an e-commerce platform built with Node.js, Express.js, and MongoDB. The application handles user registration, login, product management, order processing, and payments using Stripe.
+## Explanation Video link : 
+
+[Video](https://drive.google.com/file/d/10JccSR0Ax5ZNd_efraSHSvgVN3izbrKn/view)
 
 ## Setup and Installation
 
@@ -15,8 +18,7 @@ This is the backend for an e-commerce platform built with Node.js, Express.js, a
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/sriramalavalapati3/myindia-ecommerce-website-backend.git
     ```
 
 2. **Install dependencies:**
@@ -30,7 +32,7 @@ This is the backend for an e-commerce platform built with Node.js, Express.js, a
     Create a `.env` file in the root directory of your project and add the following environment variables:
 
     ```plaintext
-    PORT=your_port_number
+    port=your_port_number
     mongoLink=your_mongodb_connection_string
     secretTokenKey=your_secret_token_key
     STRIPE_SECRET_KEY=your_stripe_secret_key
@@ -39,7 +41,7 @@ This is the backend for an e-commerce platform built with Node.js, Express.js, a
 
     Replace the placeholder values with your actual configuration details.
 
-    - `PORT`: The port number where your server will run (e.g., 3000).
+    - `port`: The port number where your server will run (e.g., 3000).
     - `mongoLink`: The connection string for your MongoDB database.
     - `secretTokenKey`: A secret key used for token generation and verification.
     - `STRIPE_SECRET_KEY`: Your Stripe secret key for API authentication.
@@ -109,6 +111,9 @@ This is the backend for an e-commerce platform built with Node.js, Express.js, a
 token,
 userdetails
 }
+
+token is valid for 1 hour 
+and for login there is a rate limit
 ```
 
 
@@ -265,6 +270,14 @@ json
 }
 ```
 
+```
+i am attaching duplicate stripe card details for stripe payment ,you can use this 
+
+card no : 4242424242424242
+Expiry : 02/28
+cvv : 453
+```
+
 ### 8. Stripe Webhook
 **Endpoint:** `POST /api/paymentStatus`
 
@@ -274,8 +287,10 @@ json
 
 **Response:**
 
-```200 OK for successful processing.
-400 Bad Request for failed verification or processing.```
+```
+200 OK for successful processing.
+400 Bad Request for failed verification or processing.
+```
 
 `by clicking on url from response we can redirect to check out page `
 
