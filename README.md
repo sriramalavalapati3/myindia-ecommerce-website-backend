@@ -265,6 +265,18 @@ json
 }
 ```
 
+### 8. Stripe Webhook
+**Endpoint:** `POST /api/paymentStatus`
+
+**Description:** `Handles Stripe webhook events to update payment status.`
+
+**Input:** `Raw Stripe webhook event payload.`
+
+**Response:**
+
+```200 OK for successful processing.
+400 Bad Request for failed verification or processing.```
+
 `by clicking on url from response we can redirect to check out page `
 
 
@@ -284,6 +296,8 @@ You can use tools like Postman to test the API endpoints and verify the function
 
 This project is licensed under the MIT License.
 
+
+### this is postman [documentation](https://documenter.getpostman.com/view/24325307/2sA3XV9zVR)
 
 <h1>Thank You😊😊</h1>
 
