@@ -15,8 +15,7 @@ This is the backend for an e-commerce platform built with Node.js, Express.js, a
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/sriramalavalapati3/myindia-ecommerce-website-backend.git
     ```
 
 2. **Install dependencies:**
