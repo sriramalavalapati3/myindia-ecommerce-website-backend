@@ -29,7 +29,7 @@ This is the backend for an e-commerce platform built with Node.js, Express.js, a
     Create a `.env` file in the root directory of your project and add the following environment variables:
 
     ```plaintext
-    PORT=your_port_number
+    port=your_port_number
     mongoLink=your_mongodb_connection_string
     secretTokenKey=your_secret_token_key
     STRIPE_SECRET_KEY=your_stripe_secret_key
@@ -38,7 +38,7 @@ This is the backend for an e-commerce platform built with Node.js, Express.js, a
 
     Replace the placeholder values with your actual configuration details.
 
-    - `PORT`: The port number where your server will run (e.g., 3000).
+    - `port`: The port number where your server will run (e.g., 3000).
     - `mongoLink`: The connection string for your MongoDB database.
     - `secretTokenKey`: A secret key used for token generation and verification.
     - `STRIPE_SECRET_KEY`: Your Stripe secret key for API authentication.
