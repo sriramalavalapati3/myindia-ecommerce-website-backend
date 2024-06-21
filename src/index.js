@@ -35,7 +35,7 @@ app.get('/paymentCancel',async(req,res)=>{
     }
 });
 
-const port = process.env.PORT
+const port = process.env.port || 8080
 
 app.listen( port , async(req,res)=>{
 try {
