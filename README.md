@@ -273,8 +273,10 @@ json
 
 **Response:**
 
-```200 OK for successful processing.
-400 Bad Request for failed verification or processing.```
+```
+200 OK for successful processing.
+400 Bad Request for failed verification or processing.
+```
 
 `by clicking on url from response we can redirect to check out page `
 
