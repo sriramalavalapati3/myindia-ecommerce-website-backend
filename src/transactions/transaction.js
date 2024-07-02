@@ -77,11 +77,7 @@ const handleGetAllProducts = async (pageOffset, pageSize) => {
   try {
     const skip = pageOffset * pageSize;
 
-    const productsData = await products
-      .find()
-      .skip(skip)
-      .limit(pageSize)
-      .exec();
+    const productsData = await products.find()
 
     return { productsData, pageOffset };
   } catch (error) {
@@ -121,9 +117,10 @@ const getProductsByFilter = async (req, pageOffset, pageSize) => {
     const FiletedProduct = await products
       .find(filter)
       .sort(sortOption)
-      .skip(pageOffset * pageSize) // Calculate how many documents to skip based on offset and limit
-      .limit(pageSize) // Limit the number of documents returned per page
-      .exec();
+     
+      // .skip(pageOffset * pageSize) // Calculate how many documents to skip based on offset and limit
+      // .limit(pageSize) // Limit the number of documents returned per page
+      // .exec();
 
     return { FiletedProduct, pageOffset };
   } catch (error) {
